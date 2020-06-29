@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <include
+       layout="@layout/view_toolbar"
+       android:id="@+id/toolbar_booking"/>
+
+    <TextView
+        android:id="@+id/tvTitleCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khách hàng:"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_medium_xxx"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_booking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <EditText
+        android:id="@+id/edCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleCustomer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginLeft="@dimen/spacing_medium_xxx"
+        android:layout_marginRight="@dimen/text_size_height"
+        android:maxLines="1"
+        />
+    <ImageView
+        android:id="@+id/tvSelectCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_drop_down"
+        app:layout_constraintTop_toTopOf="@id/edCustomer"
+        app:layout_constraintBottom_toBottomOf="@id/edCustomer"
+        app:layout_constraintEnd_toEndOf="@id/edCustomer"/>
+    <TextView
+        android:id="@+id/tvCustomer"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi 2 con ba 3"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/spacing_super_small"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toTopOf="@id/edCustomer"
+        app:layout_constraintBottom_toBottomOf="@id/edCustomer"
+        app:layout_constraintStart_toStartOf="@id/edCustomer"
+        app:layout_constraintEnd_toEndOf="@id/edCustomer"/>
+    <TextView
+        android:id="@+id/tvTitleQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/spacing_medium_xxx"
+        android:layout_marginLeft="@dimen/spacing_medium_xxx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edCustomer"
+        android:text="Số lượng :"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
