@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.mineralwaterstore.R
 import com.example.mineralwaterstore.BaseFragment
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 /**
@@ -33,6 +34,8 @@ class HomeFragment: BaseFragment(), HomeContract.View {
 //        button_add_fragment.setOnClickListener {
 //            mPresenter?.addFragment()
 //        }
+        lvCheck.setAnimation("sample.json")
+        lvCheck.playAnimation()
     }
 
     override fun onDestroyView() {
